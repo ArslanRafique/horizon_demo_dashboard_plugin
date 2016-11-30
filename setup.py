@@ -27,6 +27,8 @@ setup(
     url='https://github.com/arslanrafique/horizon_dashboard_boilerplate',
     packages=[
         'horizon_dashboard_boilerplate',
+        'horizon_dashboard_boilerplate/boilerplate_panel',
+        'horizon_dashboard_boilerplate/boilerplate_panel/templates/boilerplate_panel'
     ],
     package_dir={'horizon_dashboard_boilerplate':
                  'horizon_dashboard_boilerplate'},

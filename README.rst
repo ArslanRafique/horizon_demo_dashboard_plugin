@@ -18,7 +18,7 @@ Horizon Dashboard Boilerplate
      :alt: Updates
 
 
-Openstack Horizon pluggable dashboard boilerplate, provides basicc foundation of dashboard and panels.
+Openstack Horizon pluggable dashboard boilerplate, provides basic foundation of dashboard and panels.
 
 
 * Free software: Apache Software License 2.0
@@ -37,4 +37,3 @@ This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypack
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
-
