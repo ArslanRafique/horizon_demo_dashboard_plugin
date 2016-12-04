@@ -78,22 +78,22 @@ Ready to contribute? Here's how to set up `horizon_dashboard_boilerplate` for lo
 
 5. Activate plugin via openstack_dashboard settings.py::
 
-    In settings.py add following:
+  In settings.py add following:
 
-    $ import horizon_dashboard_boilerplate
-    $ horizon_dashboard_boilerplate_path = os.path.dirname(horizon_dashboard_boilerplate.__file__)
+    import horizon_dashboard_boilerplate
+    horizon_dashboard_boilerplate_path = os.path.dirname(horizon_dashboard_boilerplate.__file__)
 
-    Now Add plugin in INSTALLED_APPS:
+  Now Add plugin in INSTALLED_APPS:
 
-    $ [..., 'horizon_dashboard_boilerplate']
+    [..., 'horizon_dashboard_boilerplate']
 
-    Finally, Add templates support in TEMPLATES's DIR:
+  Finally, Add templates support in TEMPLATES's DIR:
 
-    $ 'DIR' : [ ..., horizon_dashboard_boilerplate_path]
+    'DIR' : [ ..., horizon_dashboard_boilerplate_path]
 
 6. Copy files from enabled folder to openstack_dashboard/enabled folder::
 
-    Great, restart Apache/Django server and you should see the changes.
+  Great, restart Apache/Django server and you should see the changes.
 
 7. Commit your changes and push your branch to GitHub::
 
