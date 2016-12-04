@@ -76,21 +76,32 @@ Ready to contribute? Here's how to set up `horizon_dashboard_boilerplate` for lo
 
    Now you can make your changes locally.
 
-5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
+5. Activate plugin via openstack_dashboard settings.py::
 
-    $ flake8 horizon_dashboard_boilerplate tests
-    $ python setup.py test or py.test
-    $ tox
+    In settings.py add following:
 
-   To get flake8 and tox, just pip install them into your virtualenv.
+    $ import horizon_dashboard_boilerplate
+    $ horizon_dashboard_boilerplate_path = os.path.dirname(horizon_dashboard_boilerplate.__file__)
 
-6. Commit your changes and push your branch to GitHub::
+    Now Add plugin in INSTALLED_APPS:
+
+    $ [..., 'horizon_dashboard_boilerplate']
+
+    Finally, Add templates support in TEMPLATES's DIR:
+
+    $ 'DIR' : [ ..., horizon_dashboard_boilerplate_path]
+
+6. Copy files from enabled folder to openstack_dashboard/enabled folder::
+
+    Great, restart Apache/Django server and you should see the changes.
+
+7. Commit your changes and push your branch to GitHub::
 
     $ git add .
     $ git commit -m "Your detailed description of your changes."
     $ git push origin name-of-your-bugfix-or-feature
 
-7. Submit a pull request through the GitHub website.
+8. Submit a pull request through the GitHub website.
 
 Pull Request Guidelines
 -----------------------

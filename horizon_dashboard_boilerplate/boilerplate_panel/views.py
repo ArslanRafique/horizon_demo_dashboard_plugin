@@ -21,4 +21,4 @@ class JSONView(generic.View):
 
 class IndexView(tabs.TabView):
     tab_group_class = BoilerPlateTabsGroup
-    template_name = 'horizon_dashboard_boilerplate/boilerplate_panel/index.html'
+    template_name = 'boilerplate_panel/templates/index.html'
